@@ -10,8 +10,9 @@ const generateHtml = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, './src/app-cb.js')
-    // main: path.resolve(__dirname, './src/app-p.js')
+    // main: path.resolve(__dirname, './src/app-cb.js')
+    // main: path.resolve(__dirname, './src/app-p-parallel.js')
+    main: path.resolve(__dirname, './src/app-p-sequence.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

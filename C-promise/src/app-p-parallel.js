@@ -1,6 +1,6 @@
 import loadImagePromise from './load-image-promise'
 
-console.log('promise version!')
+console.log('promise version! - parallel one')
 
 let addImg = img => document.body.appendChild(img)
 
@@ -10,5 +10,5 @@ Promise
     loadImagePromise('../images/cat2.gif'),
     loadImagePromise('../images/cat3.gif')
   ])
-  .then(imgs => imgs.forEach(v => addImg(v)))
+  .then(imgs => imgs.forEach(addImg))
   .catch(err => console.log(err))

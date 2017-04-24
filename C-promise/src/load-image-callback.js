@@ -1,6 +1,6 @@
 // load-image-callback.js
 export default function loadImage(url, callback) {
-  let image = new Image()
+  let image = new Image
   image.src = url
 
   image.onload = () => callback(null, image)
