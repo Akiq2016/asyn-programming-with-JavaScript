@@ -11,11 +11,11 @@ let addImg = img => document.body.appendChild(img)
 //   .then(() => loadImagePromise('images/cat3.gif')).then(addImg)
 
 let tasks = [
-  loadImagePromise('images/cat1.gif'),
-  loadImagePromise('images/cat2.gif'),
-  loadImagePromise('images/cat3.gif')
+  () => loadImagePromise('images/cat1.gif'),
+  () => loadImagePromise('images/cat2.gif'),
+  () => loadImagePromise('images/cat3.gif')
 ]
 
 tasks.reduce((promise, item) => {
-  return promise.then(() => item).then(addImg)
+  return promise.then(item).then(addImg)
 }, Promise.resolve())

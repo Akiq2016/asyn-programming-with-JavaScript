@@ -13,7 +13,8 @@ module.exports = {
     // main: path.resolve(__dirname, './src/app-cb.js')
     // main: path.resolve(__dirname, './src/app-p-parallel.js')
     // main: path.resolve(__dirname, './src/app-p-sequence.js')
-    main: path.resolve(__dirname, './src/app-test-parallel.js')
+    // main: path.resolve(__dirname, './src/app-test-parallel.js')
+    main: path.resolve(__dirname, './src/test.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
