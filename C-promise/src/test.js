@@ -1,8 +1,8 @@
 // 新建对象就开始跑代码了
-        function loadImagePromise(ms) {
-            let letime = ms * 1000;
+        function loadImagePromise(s) {
+            let letime = s * 1000;
             return new Promise(function (resolve, reject) {
-                console.log("Promise" + ms + " start :" + Date.parse(new Date()));
+                console.log("Promise" + s + " start :" + Date.parse(new Date()));
                 setTimeout(resolve.bind(null, letime), letime);
             });
         }
